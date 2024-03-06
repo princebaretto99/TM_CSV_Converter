@@ -110,20 +110,29 @@ def delete_file(file_path):
 
 
 if __name__ == "__main__":
-    input_csv = "input.csv"  # Provide the path to your input CSV file
-    temp_output_csv = "tempoutput.csv"  
-    converter_output_csv = "converteroutput.csv"  
-    temp2_csv = "temp.csv"
-    
-    create_combined_steps_column(input_csv,temp_output_csv, converter_output_csv)
-    print("Creating a new column 'combined_steps' and 'combined_expectedresults' completed successfully.")
-    add_row_after(converter_output_csv, temp2_csv)
-    print("Creating a new column 'new_steps' and 'new_results' completed successfully.")
-    columns_to_delete = ['steps', 'expectedresults','combined_steps','combined_expectedresults']
-    delete_columns(temp2_csv, "TMOutput.csv", columns_to_delete)
-    print("Deleted unwanted columns successfully.")
-    delete_file(temp_output_csv)
-    delete_file(converter_output_csv)
-    delete_file(temp2_csv)
+    folder_path = 'inputs'  # Replace with the actual path to your folder
+
+    # Get the list of file names in the folder
+    file_names = os.listdir(folder_path)
+
+    # Iterate through the file names
+    for file_name in file_names:
+
+        input_csv = "inputs/"+file_name  # Provide the path to your input CSV file
+        tag = file_name.split('.')[0]
+        temp_output_csv = "outputs/"+tag+"tempoutput.csv"  
+        converter_output_csv = "outputs/"+tag+"converteroutput.csv"  
+        temp2_csv = "outputs/"+tag+"temp.csv"
+        
+        create_combined_steps_column(input_csv,temp_output_csv, converter_output_csv)
+        print("Creating a new column 'combined_steps' and 'combined_expectedresults' completed successfully.")
+        add_row_after(converter_output_csv, temp2_csv)
+        print("Creating a new column 'new_steps' and 'new_results' completed successfully.")
+        columns_to_delete = ['steps', 'expectedresults','combined_steps','combined_expectedresults']
+        delete_columns(temp2_csv, "outputs/"+tag+"_TMOutput.csv", columns_to_delete)
+        print("Deleted unwanted columns successfully.")
+        delete_file(temp_output_csv)
+        delete_file(converter_output_csv)
+        delete_file(temp2_csv)
 
 
