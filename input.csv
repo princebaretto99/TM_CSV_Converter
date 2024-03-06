@@ -1,0 +1,84 @@
+@_internalid,@_name,summary,preconditions,steps,expectedresults,steps,expectedresults,steps,expectedresults,steps,expectedresults,steps,expectedresults,steps,expectedresults,steps,expectedresults,steps,expectedresults,steps,expectedresults,steps,expectedresults
+258879,HU 70 Transferir desde Cta,"<p>Verificar&nbsp;HU 70 Transferir desde Cta, si en la visual de transferir con cuenta corriente a cuenta Davivienda, se presentan en la lista desplegable &uacute;nicamente los bancos que se encuentran con Estado 1 en la BD (vssh) de Valid de la tabla&nbsp;<strong>seaba</strong></p>
+","<p>Archivo cargado en GoAnyWhere</p>
+
+<p>Ejecuci&oacute;n del Job</p>
+
+<p>Guardado en BD</p>
+
+<p>Ingreso a la app con usuario que cuente con al menos&nbsp;una cuenta en Davivienda</p>
+
+<p>Ingreso a la visual de Mis cuentas</p>
+
+<p>Ingresar a la opci&oacute;n de transferir</p>
+","<p>Ingresar al home de la App con un usuario&nbsp;que no tiene inscritas cuentas de otros bancos</p>
+",,"<p>Ingresar a la Card de Mis cuentas</p>
+",,"<p>Ingresar a la opci&oacute;n de transferir</p>
+",,"<p>En la pantalla de Transferir, seleccionar la cuenta a la que se desea realizar la transferencia</p>
+","<p>El sistema despliega las opciones:</p>
+
+<p>Cuentas</p>
+
+<p>Mis inversiones</p>
+
+<p>Daviplata</p>
+
+<p>Mis bolsillos</p>
+","<p>Al seleccionar Cuentas&nbsp;</p>
+","<p>El sistema habilita&nbsp;</p>
+
+<p>Mis cuentas Davivienda</p>
+
+<p>Cuentas Davivienda de terceros</p>
+
+<p>productos de Otros&nbsp;bancos</p>
+","<p>Seleccionar producto Mic Cuentas de Otros Bancos</p>
+","<p>El sistema valida si el usuario tiene productos de otros bancos inscritos</p>
+","<p>El usuario muestra una opci&oacute;n para inscribir</p>
+",,"<p>El usuario presiona la opci&oacute;n inscribir</p>
+","<p>El sistema muestra la pantalla para inscribir el producto</p>
+","<p>Selecciona Cuentas de otros bancos</p>
+",,"<p>Selecciona el banco al que desea transferir</p>
+","<p>El sistema solo debe mostrar los bancos que se encuentran guardados en la base de datos de la tabla&nbsp;<strong>seaba </strong>que tienen c&oacute;digo de estado 1</p>
+"
+258939,HU 129 Transferir desde Ctas,"<p>Verificar&nbsp;HU 129 Transferir desde Ctas, si en la visual de Transferir desde una cuenta a Otros bancos, se presentan en la lista desplegable &uacute;nicamente los bancos que se encuentran con Estado 1 en la BD (vssh) de Valid de la tabla&nbsp;<strong>seaba</strong></p>
+","<p>Archivo cargado en GoAnyWhere</p>
+
+<p>Ejecuci&oacute;n del Job</p>
+
+<p>Guardado en BD</p>
+
+<p>Ingreso a la app con usuario que cuente con al menos&nbsp;una cuenta en Davivienda</p>
+
+<p>Ingreso a la visual de Mis cuentas</p>
+
+<p>Ingresar a la opci&oacute;n de transferir</p>
+","<p>Ingresar al home de la App con un usuarios que no tiene inscritas cuentas de otros bancos</p>
+",,"<p>Ingresar a la opci&oacute;n de transferir</p>
+",,"<p>En la pantalla de Transferir, seleccionar la cuenta a la que se desea realizar la transferencia</p>
+","<p>El sistema despliega las opciones:</p>
+
+<p>Cuentas</p>
+
+<p>Mis inversiones</p>
+
+<p>Daviplata</p>
+
+<p>&nbsp;</p>
+","<p>Seleccionar Cuentas</p>
+","<p>El sistema habilita&nbsp;</p>
+
+<p>Mis cuentas Davivienda</p>
+
+<p>Cuentas Davivienda de terceros</p>
+
+<p>Productos de otros bancos</p>
+","<p>Seleccionar Productos de otros bancos</p>
+","<p>El sistema valida si el usuario tiene productos de otros bancos inscritos</p>
+","<p>El usuario muestra una opci&oacute;n para inscribir la cuenta</p>
+",,"<p>El usuario presiona la opci&oacute;n inscribir</p>
+","<p>El sistema muestra la pantalla para inscribir el producto</p>
+","<p>Selecciona Cuentas de otros bancos</p>
+",,"<p>Selecciona el banco al que desea transferir</p>
+","<p>El sistema solo debe mostrar los bancos que se encuentran guardados en la base de datos de la tabla&nbsp;<strong>seaba </strong>que tienen c&oacute;digo de estado 1</p>
+",,
