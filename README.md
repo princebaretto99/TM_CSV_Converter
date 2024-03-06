@@ -18,9 +18,11 @@ Follow these steps to get your project up and running:
 
 ## Usage
 
-Explain how to use your project once the prerequisites are met.
+1. Add TestLink CSV files to the [inputs folder](/inputs/)
+
+2. Run the following command:
 
 ```bash
 python3 converter.py
 ```
-Note: Replace `input.csv` file with your file. Results will be pushed to `TMOutput.csv`. If your changing the name of the `input.csv` file please update it in the [converter.py](https://github.com/princebaretto99/TM_CSV_Converter/blob/e9f147921f42d8f0a3b8677ab8b58620c7e8dbfc/converter.py#L113) file as well
+Note: Results will be pushed to the [outputs](/outputs/) folder. 
